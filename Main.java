@@ -10,7 +10,6 @@ public class Main {
         rentalSystem.addCar(car2);
         rentalSystem.addCar(car3);
 
-        // 🚀 Launch the Swing GUI instead of console menu
         javax.swing.SwingUtilities.invokeLater(() -> {
             new CarRentalGUI(rentalSystem);
         });
