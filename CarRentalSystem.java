@@ -11,6 +11,7 @@ public class CarRentalSystem {
         rentals = new ArrayList<>();
     }
 
+
     public void addCar(Car car) {
         cars.add(car);
     }
@@ -18,6 +19,19 @@ public class CarRentalSystem {
     public void addCustomer(Customer customer) {
         customers.add(customer);
     }
+
+    public List<Car> getCars() {
+    return cars;
+    }
+
+    public List<Customer> getCustomers() {
+    return customers;
+    }
+
+    public List<Rental> getRentals() {
+    return rentals;
+    }
+
 
     //<---------------------came for renting the car------------------->
 
