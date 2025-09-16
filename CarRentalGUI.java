@@ -15,14 +15,22 @@ public class CarRentalGUI {
         frame.setSize(500, 250);
         frame.setLayout(new BorderLayout());
 
-        // ===== Modern Look Styling =====
-        frame.getContentPane().setBackground(new Color(23, 23, 23)); // blacky background
 
         // Title
         JLabel title = new JLabel("CAR RENTAL SYSTEM", SwingConstants.CENTER);
         title.setFont(new Font("Arial", Font.BOLD, 30));
         title.setForeground(new Color(255, 255, 255)); // change color to white
         frame.add(title, BorderLayout.NORTH);
+
+
+        JPanel titlePanel = new JPanel();
+        titlePanel.setBackground(new Color(24, 24, 24));
+        titlePanel.setLayout(new BorderLayout());
+        titlePanel.setBorder(BorderFactory.createEmptyBorder(20, 0, 10, 0)); // top, left, bottom, right
+
+        titlePanel.add(title, BorderLayout.CENTER);
+        frame.add(titlePanel, BorderLayout.NORTH);
+
 
         // Buttons
         JPanel panel = new JPanel();
